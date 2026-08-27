@@ -1,13 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Vania Veronica (Nia)</title>
+    <!-- Menghubungkan file CSS Eksternal (Modul 3 & 4) -->
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <h1>Contact me</h1>
-    <p>Email: vaniaveronica0301@gmail.com</p>
-    <p>nomor telepon: 082260950451</p>
+
+    <!-- Header & Dropdown Navigation Bar (Modul 5 & Modul 6) -->
+    <div id="header-wrapper">
+        <div class="nav-container">
+            <div class="brand-logo">
+                <span>PORTFOLIO</span> NIA
+            </div>
+            <!-- Menu Navigasi Bertingkat (Modul 6) -->
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Tentang Saya</a></li>
+                <li>
+                    <a href="portfolio.html">Praktikum CSS ▾</a>
+                    <ul>
+                        <li><a href="portfolio.html#modul3">Modul 3 (Selector)</a></li>
+                        <li><a href="portfolio.html#modul4">Modul 4 (CSS Image)</a></li>
+                        <li><a href="portfolio.html#modul5">Modul 5 (Layout)</a></li>
+                        <li><a href="portfolio.html#modul6">Modul 6 (Dropdown)</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="active">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div id="hero" style="padding: 40px 20px;">
+        <div class="hero-content">
+            <h1>Hubungi Saya</h1>
+            <p>Silakan tinggalkan pesan, diskusi kolaborasi proyek, atau pertanyaan seputar pemrograman web</p>
+        </div>
+    </div>
+
+    <!-- Wrapper Utama (Modul 3 & Modul 5) -->
+    <div id="wrapper">
+
+        <!-- Layout 2 Kolom (Modul 5) -->
+        <div class="layout-2-kolom clearfix">
+            
+            <!-- Kolom Kiri: Informasi Kontak Langsung -->
+            <div id="leftcolumn">
+                <h3>Informasi Kontak</h3>
+                <p class="infotext" style="margin-bottom: 20px;">Jalur komunikasi resmi</p>
+
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #1e3c72; font-size: 14px; margin-bottom: 4px;">📧 Email:</h4>
+                    <p style="font-size: 14px; margin-bottom: 0;">
+                        <a href="mailto:vaniaveronica0301@gmail.com">vaniaveronica0301@gmail.com</a>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #1e3c72; font-size: 14px; margin-bottom: 4px;">📱 WhatsApp / Telepon:</h4>
+                    <p style="font-size: 14px; margin-bottom: 0;">
+                        <a href="https://wa.me/6282260950451" target="_blank">+62 822-6095-0451</a>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #1e3c72; font-size: 14px; margin-bottom: 4px;">🐙 GitHub Repository:</h4>
+                    <p style="font-size: 14px; margin-bottom: 0;">
+                        <a href="https://github.com/vaniaveronica0301-bot/vaniaveronica0301-bot" target="_blank">vaniaveronica0301-bot</a>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #1e3c72; font-size: 14px; margin-bottom: 4px;">🎓 Institusi & Program:</h4>
+                    <p style="font-size: 14px; margin-bottom: 0;">Teknik Komputer C '25<br>Praktikum Pemrograman Web</p>
+                </div>
+
+                <div class="box-transparan">
+                    <p style="font-size: 12px; margin-bottom: 0; color: #2d3748;">
+                        <i>"Terbuka untuk diskusi proyek web, kolaborasi tim, dan eksplorasi teknologi baru."</i>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Formulir Kirim Pesan -->
+            <div id="rightcolumn">
+                <span class="headlines">Kirim Pesan / Formulir Kontak</span><br>
+                <div class="sublines" style="margin-bottom: 20px;">
+                    Isi formulir di bawah ini untuk mengirimkan tanggapan, saran, atau pertanyaan.
+                </div>
+
+                <form action="#" method="POST" onsubmit="alert('Terima kasih! Pesan Anda telah terkirim.'); return false;">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap :</label>
+                        <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukkan nama lengkap Anda..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Alamat Email :</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="nama@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subjek">Subjek / Perihal :</label>
+                        <input type="text" id="subjek" name="subjek" class="form-control" placeholder="Misal: Diskusi Tugas Pemrograman Web..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Isi Pesan :</label>
+                        <textarea id="pesan" name="pesan" rows="5" class="form-control" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                    </div>
+
+                    <div style="margin-top: 25px;">
+                        <button type="submit" class="btn-primary">Kirim Pesan</button>
+                        <button type="reset" class="btn-secondary">Reset Formulir</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>&copy; 2026 <b>Vania Veronica (Nia)</b> - Kelas Tekom C 2025. All Rights Reserved.</p>
+        <p class="infotext">Dibuat untuk Praktikum Pemrograman Web Teknik Komputer | Repositori GitHub: <a href="https://github.com/vaniaveronica0301-bot/vaniaveronica0301-bot" target="_blank">vaniaveronica0301-bot</a></p>
+    </div>
+
 </body>
 </html>

@@ -1,11 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tentang Saya - Vania Veronica (Nia)</title>
+    <!-- Menghubungkan file CSS Eksternal (Modul 3 & 4) -->
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-  <p>ini adalah website sederhana</p>  
+
+    <!-- Header & Dropdown Navigation Bar (Modul 5 & Modul 6) -->
+    <div id="header-wrapper">
+        <div class="nav-container">
+            <div class="brand-logo">
+                <span>PORTFOLIO</span> NIA
+            </div>
+            <!-- Menu Navigasi Bertingkat (Modul 6) -->
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">Tentang Saya</a></li>
+                <li>
+                    <a href="portfolio.html">Praktikum CSS ▾</a>
+                    <ul>
+                        <li><a href="portfolio.html#modul3">Modul 3 (Selector)</a></li>
+                        <li><a href="portfolio.html#modul4">Modul 4 (CSS Image)</a></li>
+                        <li><a href="portfolio.html#modul5">Modul 5 (Layout)</a></li>
+                        <li><a href="portfolio.html#modul6">Modul 6 (Dropdown)</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section / Sub-Header -->
+    <div id="hero" style="padding: 40px 20px;">
+        <div class="hero-content">
+            <h1>Tentang Saya & Biodata Diri</h1>
+            <p>Mengenal lebih dekat latar belakang, profil akademik, dan cita-cita ke depan</p>
+        </div>
+    </div>
+
+    <!-- Wrapper Utama (Modul 3 & Modul 5) -->
+    <div id="wrapper">
+
+        <!-- Layout 2 Kolom (Modul 5) -->
+        <div class="layout-2-kolom clearfix">
+            
+            <!-- Kolom Kiri: Galeri Pasfoto Standar (Modul 4: Tugas Mandiri) -->
+            <div id="leftcolumn">
+                <h3 style="text-align: center; margin-bottom: 15px;">Galeri Pasfoto Resmi</h3>
+                <p class="infotext" style="text-align: center; margin-bottom: 20px;">Penerapan ukuran pasfoto standar (Modul 4 CSS Image)</p>
+
+                <!-- Ukuran Pasfoto 4x6 (Modul 4) -->
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <img src="assets/images/profile.jpg" alt="Pasfoto 4x6 Vania Veronica" class="img-portfolio pasfoto-4x6">
+                    <p style="font-size: 12px; margin-top: 6px; font-weight: bold; color: #1e3c72;">Ukuran 4x6 (160 x 240 px)</p>
+                </div>
+
+                <!-- Ukuran Pasfoto 3x4 (Modul 4) -->
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <img src="assets/images/profile.jpg" alt="Pasfoto 3x4 Vania Veronica" class="img-portfolio pasfoto-3x4">
+                    <p style="font-size: 12px; margin-top: 6px; font-weight: bold; color: #1e3c72;">Ukuran 3x4 (120 x 160 px)</p>
+                </div>
+
+                <div class="box-transparan" style="font-size: 13px;">
+                    <b>Catatan Efek CSS Image:</b>
+                    <ul style="padding-left: 15px; margin-top: 5px;">
+                        <li>Border solid 3px warna tema</li>
+                        <li>Efek transisi <i>hover opacity</i> 100%</li>
+                        <li>Sudut membulat <i>border-radius</i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Detail Biodata & Rencana Masa Depan -->
+            <div id="rightcolumn">
+                <span class="headlines">Profil Mahasiswa</span><br>
+                <div class="sublines" style="margin-bottom: 20px;">
+                    Perkenalkan, saya <b>Vania Veronica</b>, akrab disapa <b>Nia</b>. Saat ini saya sedang menempuh pendidikan di bidang Teknik Komputer dengan minat khusus pada rekayasa perangkat lunak web, antarmuka pengguna (UI/UX), dan teknologi jaringan komputer.
+                </div>
+
+                <!-- Kartu Biodata Format KTP / KK (Modul 3 & 4 Tugas Mandiri) -->
+                <div class="card-identitas" style="margin-bottom: 30px;">
+                    <div class="card-header-id">
+                        <h3>KARTU BIODATA MAHASISWA TEKNIK KOMPUTER</h3>
+                    </div>
+                    <table class="table-biodata">
+                        <tr>
+                            <td class="label">Nama Lengkap</td>
+                            <td class="colon">:</td>
+                            <td class="value"><b>Vania Veronica (Nia)</b></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Program Studi / Jurusan</td>
+                            <td class="colon">:</td>
+                            <td class="value">Teknik Komputer</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Kelas / Angkatan</td>
+                            <td class="colon">:</td>
+                            <td class="value">Tekom C 2025</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Mata Kuliah</td>
+                            <td class="colon">:</td>
+                            <td class="value">Pemrograman Web</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Email Resmi</td>
+                            <td class="colon">:</td>
+                            <td class="value">vaniaveronica0301@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Nomor Kontak / WA</td>
+                            <td class="colon">:</td>
+                            <td class="value">082260950451</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Minat / Keahlian</td>
+                            <td class="colon">:</td>
+                            <td class="value">Web Development (HTML/CSS), UI Design, Computer Networking</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Rencana dan Target 2-3 Tahun ke Depan (Modul 3: Tugas Mandiri No. 3) -->
+                <div class="section-title" style="text-align: left; margin-bottom: 15px;">
+                    <h2>🎯 Target & Rencana 2 - 3 Tahun ke Depan</h2>
+                </div>
+
+                <div class="box-transparan">
+                    <p>Sebagai mahasiswa Teknik Komputer yang sedang mendalami teknologi web, berikut adalah roadmap dan pencapaian yang ditargetkan dalam 2 hingga 3 tahun ke depan:</p>
+                    
+                    <div style="margin-top: 15px;">
+                        <h4 style="color: #1e3c72; margin-bottom: 5px;">1. Penguasaan Penuh Frontend & Backend Web (Tahun 1)</h4>
+                        <p style="font-size: 14px; margin-bottom: 15px;">Menguasai dasar-dasar web modern mulai dari HTML5, CSS3 lanjutan (Flexbox, Grid, Animasi), JavaScript ES6+, hingga framework backend seperti Node.js atau PHP/Laravel untuk membangun aplikasi web dinamis berskala penuh.</p>
+
+                        <h4 style="color: #1e3c72; margin-bottom: 5px;">2. Portofolio Proyek Nyata & Kolaborasi Open Source (Tahun 2)</h4>
+                        <p style="font-size: 14px; margin-bottom: 15px;">Menyelesaikan minimal 5 proyek web nyata, aktif berkontribusi di GitHub, mengikuti sertifikasi profesional bidang web development, dan membangun sistem informasi yang bermanfaat untuk masyarakat atau institusi.</p>
+
+                        <h4 style="color: #1e3c72; margin-bottom: 5px;">3. Magang Industri & Karir Profesional (Tahun 3)</h4>
+                        <p style="font-size: 14px; margin-bottom: 0;">Mengikuti program magang (internship) di perusahaan teknologi terkemuka sebagai <i>Frontend Engineer</i> atau <i>Fullstack Developer</i>, serta mempersiapkan kelulusan tugas akhir di bidang teknologi komputer dengan predikat memuaskan.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>&copy; 2026 <b>Vania Veronica (Nia)</b> - Kelas Tekom C 2025. All Rights Reserved.</p>
+        <p class="infotext">Dibuat untuk Praktikum Pemrograman Web Teknik Komputer | Repositori GitHub: <a href="https://github.com/vaniaveronica0301-bot/vaniaveronica0301-bot" target="_blank">vaniaveronica0301-bot</a></p>
+    </div>
+
 </body>
 </html>

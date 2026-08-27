@@ -1,0 +1,726 @@
+/* ==========================================================================
+   PORTFOLIO STYLESHEET - VANIA VERONICA (NIA)
+   Penerapan Lengkap Kaidah CSS:
+   - MODUL 3: Selector (HTML, Class, ID, Grouping), Span, Div, CSS Eksternal
+   - MODUL 4: CSS Image (Border, Dimensions 3x4, 4x6, 10x15, Opacity, Box Transparan, Background)
+   - MODUL 5: CSS Navigasi & Layout (Navigasi Horizontal/Vertikal, Layout 2 & 3 Kolom)
+   - MODUL 6: Dropdown Navigasi, Linear Gradient, Border Radius, Transitions
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. RESET & DASAR ELEMEN (MODUL 3: Selector HTML & Grouping)
+   -------------------------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Grouping Selector untuk teks dan heading */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #1a365d;
+    margin-bottom: 12px;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+
+p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #4a5568;
+}
+
+a {
+    color: #2b6cb0;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+    color: #1a365d;
+}
+
+/* Modul 3: Selector Class untuk Headline & Sublines */
+.headlines, .sublines, .infotext {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.headlines {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #1e3c72;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.sublines {
+    font-size: 12pt;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+.infotext {
+    font-size: 10pt;
+    color: #718096;
+    font-style: italic;
+}
+
+/* --------------------------------------------------------------------------
+   2. HEADER & DROP-DOWN NAVBAR (MODUL 5 & MODUL 6)
+   -------------------------------------------------------------------------- */
+#header-wrapper {
+    width: 100%;
+    background: #1e3c72;
+    background: -webkit-linear-gradient(top, #1e3c72 0%, #2a5298 100%);
+    background: -moz-linear-gradient(top, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.brand-logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo span {
+    color: #63b3ed;
+}
+
+/* Modul 6: Multi-level Navbar Dropdown */
+#menu, #menu li, #menu ul, #menu a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+}
+
+#menu li a {
+    display: block;
+    padding: 18px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e2e8f0;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+#menu li:hover > a,
+#menu li a.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border-bottom: 3px solid #63b3ed;
+}
+
+/* Modul 6: Dropdown Sub-menu */
+#menu ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background: #2a5298;
+    background: linear-gradient(180deg, #2a5298 0%, #1e3c72 100%);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 1000;
+}
+
+#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#menu ul li {
+    float: none;
+    display: block;
+    width: 100%;
+}
+
+#menu ul li a {
+    padding: 12px 20px;
+    font-size: 13px;
+    text-transform: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+#menu ul li a:hover {
+    background: #63b3ed;
+    color: #1a365d;
+    padding-left: 25px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+#menu ul li:last-child a {
+    border-bottom: none;
+}
+
+/* --------------------------------------------------------------------------
+   3. HERO BANNER & BACKGROUND (MODUL 4: CSS Image & Background)
+   -------------------------------------------------------------------------- */
+#hero {
+    background-color: #1a202c;
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.92) 0%, rgba(42, 82, 152, 0.88) 100%), 
+                radial-gradient(circle at top right, #3182ce, transparent 60%);
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    padding: 6px 16px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#hero h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    color: #e2e8f0;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* --------------------------------------------------------------------------
+   4. CONTAINER UTAMA & WRAPPER (MODUL 3 & MODUL 5)
+   -------------------------------------------------------------------------- */
+#wrapper {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    min-height: 500px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 26px;
+    color: #1e3c72;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #63b3ed;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   5. LAYOUT 2 KOLOM (MODUL 5: CSS Navigasi & Layout)
+   -------------------------------------------------------------------------- */
+.layout-2-kolom {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+#leftcolumn {
+    float: left;
+    width: 32%;
+    background-color: #ffffff;
+    padding: 25px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+}
+
+#rightcolumn {
+    float: right;
+    width: 65%;
+    background-color: #ffffff;
+    padding: 30px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+}
+
+/* --------------------------------------------------------------------------
+   6. LAYOUT 3 KOLOM (MODUL 5: CSS Navigasi & Layout)
+   -------------------------------------------------------------------------- */
+.layout-3-kolom {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+#sidebar-kiri {
+    float: left;
+    width: 31%;
+    margin-right: 3.5%;
+    background-color: #ffffff;
+    padding: 22px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+    min-height: 320px;
+}
+
+#sidebar-tengah-atau-badan {
+    float: left;
+    width: 31%;
+    margin-right: 3.5%;
+    background-color: #ffffff;
+    padding: 22px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+    min-height: 320px;
+}
+
+#sidebar-kanan {
+    float: left;
+    width: 31%;
+    background-color: #ffffff;
+    padding: 22px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+    min-height: 320px;
+}
+
+/* Clearfix untuk floating elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* --------------------------------------------------------------------------
+   7. CSS IMAGE & FOTO UKURAN STANDAR (MODUL 4)
+   -------------------------------------------------------------------------- */
+/* Border dan efek hover opacity */
+.img-portfolio {
+    border: 3px solid #2b6cb0;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    opacity: 0.90;
+    -webkit-transition: opacity 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 1.0;
+    border-color: #63b3ed;
+    transform: scale(1.02);
+}
+
+/* Modul 4: Ukuran Pasfoto Standar (3x4, 4x6, 10x15) */
+.pasfoto-3x4 {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border: 3px solid #1e3c72;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.pasfoto-4x6 {
+    width: 160px;
+    height: 240px;
+    object-fit: cover;
+    border: 3px solid #1e3c72;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.pasfoto-10x15 {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #1e3c72;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.foto-profil-avatar {
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    border: 3px solid #2b6cb0;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    margin: 0 auto 15px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    opacity: 0.95;
+    transition: all 0.3s ease;
+}
+
+.foto-profil-avatar:hover {
+    opacity: 1.0;
+    border-color: #63b3ed;
+}
+
+/* --------------------------------------------------------------------------
+   8. BOX TRANSPARAN (MODUL 4: Text di Box Transparan / Glassmorphism)
+   -------------------------------------------------------------------------- */
+.box-transparan {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.box-transparan-dark {
+    background: rgba(26, 54, 93, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.box-transparan-dark h3, 
+.box-transparan-dark p {
+    color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   9. NAVIGASI VERTIKAL (MODUL 5)
+   -------------------------------------------------------------------------- */
+.nav-vertikal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-vertikal li {
+    margin-bottom: 8px;
+}
+
+.nav-vertikal a {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2b6cb0;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: background-color 0.25s ease, transform 0.25s ease;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-vertikal a:hover, 
+.nav-vertikal a:active {
+    background-color: #1e3c72;
+    transform: translateX(4px);
+}
+
+/* --------------------------------------------------------------------------
+   10. KARTU BIODATA / IDENTITAS (MODUL 3 & 4: Tugas Mandiri)
+   -------------------------------------------------------------------------- */
+.card-identitas {
+    background: #ffffff;
+    border: 2px solid #cbd5e0;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+.card-header-id {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+    padding: 12px 18px;
+    margin: -20px -20px 15px -20px;
+    text-align: center;
+    border-bottom: 2px solid #63b3ed;
+}
+
+.card-header-id h3 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.table-biodata {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-biodata td {
+    padding: 8px 6px;
+    font-size: 14px;
+    vertical-align: top;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.table-biodata td.label {
+    font-weight: bold;
+    color: #2d3748;
+    width: 38%;
+}
+
+.table-biodata td.colon {
+    width: 4%;
+    text-align: center;
+}
+
+.table-biodata td.value {
+    color: #4a5568;
+    width: 58%;
+}
+
+/* --------------------------------------------------------------------------
+   11. FORM & ELEMEN INTERAKTIF
+   -------------------------------------------------------------------------- */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #2d3748;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e0;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+.btn-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #1e3c72 0%, #2b6cb0 100%);
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1a2e56 0%, #1e3c72 100%);
+    box-shadow: 0 4px 10px rgba(30, 60, 114, 0.3);
+    color: #ffffff;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #edf2f7;
+    color: #2d3748;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: 1px solid #cbd5e0;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: all 0.25s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e2e8f0;
+    color: #1a202c;
+}
+
+/* --------------------------------------------------------------------------
+   12. BADGE & SKILL CHIPS
+   -------------------------------------------------------------------------- */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.badge {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    border: 1px solid #bee3f8;
+    padding: 5px 12px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.badge-green {
+    background-color: #f0fff4;
+    color: #276749;
+    border-color: #c6f6d5;
+}
+
+.badge-purple {
+    background-color: #faf5ff;
+    color: #6b46c1;
+    border-color: #e9d8fd;
+}
+
+/* --------------------------------------------------------------------------
+   13. FOOTER
+   -------------------------------------------------------------------------- */
+#footer {
+    background-color: #1a202c;
+    color: #a0aec0;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 3px solid #2b6cb0;
+    margin-top: 50px;
+}
+
+#footer p {
+    color: #a0aec0;
+    margin-bottom: 5px;
+}
+
+#footer a {
+    color: #63b3ed;
+}
+
+#footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   14. RESPONSIVE DESIGN MEDIA QUERIES
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    
+    #menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #leftcolumn, #rightcolumn {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #sidebar-kiri, #sidebar-tengah-atau-badan, #sidebar-kanan {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

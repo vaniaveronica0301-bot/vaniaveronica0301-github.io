@@ -1,13 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio - Vania Veronica (Nia) | Teknik Komputer</title>
+    <!-- Menghubungkan file CSS Eksternal (Modul 3 & 4) -->
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <h1>Halo kelas tekom c 25</h1>
-    <h2>selamat datang di mata kuliah pemrograman web</h2>
-    <p>Nama Saya Nia</p>
+
+    <!-- Header & Dropdown Navigation Bar (Modul 5 & Modul 6) -->
+    <div id="header-wrapper">
+        <div class="nav-container">
+            <div class="brand-logo">
+                <span>PORTFOLIO</span> NIA
+            </div>
+            <!-- Menu Navigasi Bertingkat (Modul 6) -->
+            <ul id="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">Tentang Saya</a></li>
+                <li>
+                    <a href="portfolio.html">Praktikum CSS ▾</a>
+                    <ul>
+                        <li><a href="portfolio.html#modul3">Modul 3 (Selector)</a></li>
+                        <li><a href="portfolio.html#modul4">Modul 4 (CSS Image)</a></li>
+                        <li><a href="portfolio.html#modul5">Modul 5 (Layout)</a></li>
+                        <li><a href="portfolio.html#modul6">Modul 6 (Dropdown)</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section / Banner (Modul 4: CSS Background & Gradient) -->
+    <div id="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Mahasiswa Teknik Komputer 2025</span>
+            <h1>Selamat Datang di Portofolio Saya</h1>
+            <p>Halo! Saya <b>Vania Veronica (Nia)</b>, mahasiswi Teknik Komputer yang bersemangat dalam pengembangan web frontend, desain antarmuka, dan teknologi komputer.</p>
+            <div>
+                <a href="about.html" class="btn-primary">Lihat Profil Lengkap</a>
+                <a href="portfolio.html" class="btn-secondary">Eksplorasi Proyek</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wrapper Konten Utama (Modul 3 & Modul 5) -->
+    <div id="wrapper">
+
+        <!-- Layout 2 Kolom (Modul 5: CSS Float Layout) -->
+        <div class="layout-2-kolom clearfix">
+            <!-- Kolom Kiri: Profil Singkat & Foto -->
+            <div id="leftcolumn">
+                <div style="text-align: center;">
+                    <!-- Foto Profil dengan CSS Image Border & Hover Effect (Modul 4) -->
+                    <img src="assets/images/profile.jpg" alt="Foto Vania Veronica" class="foto-profil-avatar">
+                    <h3>Vania Veronica</h3>
+                    <p class="infotext">Kelas Tekom C '25</p>
+                </div>
+                
+                <hr style="margin: 15px 0; border: 0; border-top: 1px solid #e2e8f0;">
+                
+                <!-- Navigasi Vertikal (Modul 5) -->
+                <h4>Akses Cepat</h4>
+                <ul class="nav-vertikal">
+                    <li><a href="about.html">Tentang Saya</a></li>
+                    <li><a href="portfolio.html">Koleksi Proyek</a></li>
+                    <li><a href="contact.html">Hubungi Saya</a></li>
+                </ul>
+
+                <hr style="margin: 15px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+                <h4>Keahlian Utama</h4>
+                <div class="badge-container">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge badge-green">Git & GitHub</span>
+                    <span class="badge badge-purple">Web Design</span>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Pengenalan & Box Transparan -->
+            <div id="rightcolumn">
+                <!-- Selector Class: Headlines, Sublines, Infotext (Modul 3) -->
+                <span class="headlines">Selamat Datang di Website Portofolio</span><br>
+                <div class="sublines">
+                    Website ini dibuat sebagai implementasi komprehensif praktikum <b>Pemrograman Web</b> menggunakan standar CSS modern, struktur semantik HTML5, dan version control Git/GitHub.
+                </div>
+                
+                <!-- Text di Box Transparan (Modul 4: Tugas Mandiri) -->
+                <div class="box-transparan">
+                    <h3 style="color: #1e3c72; margin-bottom: 8px;">💡 Penerapan Modul Praktikum</h3>
+                    <p>Dalam portofolio ini, seluruh aturan dan konsep CSS dari Modul 3 hingga Modul 6 telah diimplementasikan secara terstruktur:</p>
+                    <ul style="padding-left: 20px; color: #4a5568; font-size: 14px;">
+                        <li><b>Modul 3:</b> Selector HTML, Class, ID, Grouping selector, serta pemisahan file CSS eksternal.</li>
+                        <li><b>Modul 4:</b> Background styling, perlakuan gambar (border, dimensi pasfoto, opacity hover), dan text box transparan.</li>
+                        <li><b>Modul 5:</b> Navigasi horizontal & vertikal serta Layout 2 kolom dan 3 kolom berbasis CSS.</li>
+                        <li><b>Modul 6:</b> Dropdown navbar bertingkat, CSS Linear Gradient, efek border-radius, dan transisi halus.</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <a href="portfolio.html" class="btn-primary">Lihat Demo Modul CSS</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Title -->
+        <div class="section-title">
+            <h2>Fokus & Pembelajaran</h2>
+            <p class="infotext">Tiga pilar utama dalam pembelajaran Pemrograman Web</p>
+        </div>
+
+        <!-- Layout 3 Kolom (Modul 5: CSS Float 3 Kolom) -->
+        <div class="layout-3-kolom clearfix">
+            <!-- Kolom 1 -->
+            <div id="sidebar-kiri">
+                <h3>🌐 Dasar Web & HTML5</h3>
+                <p>Membangun struktur dokumen web yang valid dan semantik menggunakan tag HTML standar, form input, tabel data, serta navigasi multi-halaman.</p>
+                <div class="badge-container">
+                    <span class="badge">Semantik Tag</span>
+                    <span class="badge">Form & Tabel</span>
+                </div>
+            </div>
+
+            <!-- Kolom 2 -->
+            <div id="sidebar-tengah-atau-badan">
+                <h3>🎨 Desain & Styling CSS</h3>
+                <p>Mengatur tata letak halaman (layout), pemilihan warna harmoni, background gradient, tipografi yang nyaman dibaca, serta efek visual interaktif.</p>
+                <div class="badge-container">
+                    <span class="badge badge-green">CSS Grid & Float</span>
+                    <span class="badge badge-green">Gradients</span>
+                </div>
+            </div>
+
+            <!-- Kolom 3 -->
+            <div id="sidebar-kanan">
+                <h3>🚀 Version Control & Git</h3>
+                <p>Mengelola repositori kode, tracking revisi, branching, serta mempublikasikan proyek portofolio ke platform GitHub secara terorganisir.</p>
+                <div class="badge-container">
+                    <span class="badge badge-purple">Git Commit</span>
+                    <span class="badge badge-purple">GitHub Repo</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>&copy; 2026 <b>Vania Veronica (Nia)</b> - Kelas Tekom C 2025. All Rights Reserved.</p>
+        <p class="infotext">Dibuat untuk Praktikum Pemrograman Web Teknik Komputer | Repositori GitHub: <a href="https://github.com/vaniaveronica0301-bot/vaniaveronica0301-bot" target="_blank">vaniaveronica0301-bot</a></p>
+    </div>
+
 </body>
 </html>
