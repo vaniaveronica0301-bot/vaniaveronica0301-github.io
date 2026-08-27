@@ -101,15 +101,22 @@ latihan-git/
 
 1. **Clone repositori ini ke komputer Anda:**
    ```bash
-   git clone https://github.com/vaniaveronica0301-bot/vaniaveronica0301-bot.git
+   git clone https://github.com/vaniaveronica0301-bot/vaniaveronica0301-github.io.git
    ```
 2. **Buka folder proyek:**
    ```bash
    cd latihan-git
    ```
 3. **Buka file `index.html`:**
-   - Cukup klik dua kali file `index.html`, atau
-   - Klik kanan > *Open with* > Pilih browser favorit Anda (Google Chrome, Firefox, Microsoft Edge).
+   - Cukup klik dua kali file `buka-portofolio.bat` atau `index.html`, atau
+   - Klik kanan `index.html` > *Open with* > Pilih browser favorit Anda (Google Chrome, Firefox, Microsoft Edge).
+
+---
+
+## 🌐 Akses Online (GitHub Pages)
+
+Website portofolio ini dapat diakses secara online melalui link:  
+🔗 **[https://vaniaveronica0301-bot.github.io/](https://vaniaveronica0301-bot.github.io/)**
 
 ---
 
@@ -141,7 +148,7 @@ Jika Anda memiliki pertanyaan atau ingin berdiskusi lebih lanjut, silakan hubung
 - **Kelas:** Tekom C 2025 (Teknik Komputer)
 - **Email:** [vaniaveronica0301@gmail.com](mailto:vaniaveronica0301@gmail.com)
 - **WhatsApp:** [+62 822-6095-0451](https://wa.me/6282260950451)
-- **GitHub:** [@vaniaveronica0301-bot](https://github.com/vaniaveronica0301-bot)
+- **GitHub:** [@vaniaveronica0301-bot](https://github.com/vaniaveronica0301-bot/vaniaveronica0301-github.io)
 
 ---
 *Dibuat dengan ❤️ untuk Praktikum Pemrograman Web Teknik Komputer.*
