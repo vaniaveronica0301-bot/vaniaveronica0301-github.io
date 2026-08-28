@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koleksi Praktikum & Portofolio - Vania Veronica (Nia)</title>
-    <!-- Menghubungkan file CSS Eksternal (Modul 3 & 4) -->
+    <title>Portofolio & Proyek Web - Vania Veronica (Nia) | Teknik Komputer</title>
+    <!-- Menghubungkan file CSS Eksternal (Modul 3 & Modul 4) -->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 
-    <!-- Header & Dropdown Navigation Bar (Modul 5 & Modul 6) -->
+    <!-- Header & Multi-level Dropdown Navigation Bar (Modul 5 & Modul 6) -->
     <div id="header-wrapper">
         <div class="nav-container">
             <div class="brand-logo">
@@ -20,12 +20,12 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Tentang Saya</a></li>
                 <li>
-                    <a href="portfolio.html" class="active">Praktikum CSS ▾</a>
+                    <a href="portfolio.html" class="active">Portofolio ▾</a>
                     <ul>
-                        <li><a href="#modul3">Modul 3 (Selector)</a></li>
-                        <li><a href="#modul4">Modul 4 (CSS Image)</a></li>
-                        <li><a href="#modul5">Modul 5 (Layout)</a></li>
-                        <li><a href="#modul6">Modul 6 (Dropdown)</a></li>
+                        <li><a href="#proyek-web">Proyek Web</a></li>
+                        <li><a href="#desain-ui">Desain & Layout</a></li>
+                        <li><a href="#galeri-foto">Galeri Pasfoto</a></li>
+                        <li><a href="#sistem-informasi">Sistem Informasi</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Kontak</a></li>
@@ -33,172 +33,181 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <div id="hero" style="padding: 40px 20px;">
+    <!-- Hero Section / Banner (Modul 4 & Modul 6) -->
+    <div id="hero" style="padding: 45px 20px;">
         <div class="hero-content">
-            <h1>Showcase Modul Praktikum Pemrograman Web</h1>
-            <p>Demonstrasi implementasi kaidah CSS Modul 3, 4, 5, dan 6 dalam proyek portofolio nyata</p>
+            <span class="hero-badge">Koleksi Karya & Eksplorasi Digital</span>
+            <h1>Galeri Proyek & Portofolio Web</h1>
+            <p>Kumpulan karya perancangan antarmuka web, sistem informasi, dan implementasi CSS modern oleh Vania Veronica</p>
         </div>
     </div>
 
-    <!-- Wrapper Utama -->
+    <!-- Wrapper Utama (Modul 3 & Modul 5) -->
     <div id="wrapper">
 
         <!-- ====================================================================
-             MODUL 3: DASAR CSS & SELECTOR
+             BAGIAN 1: PROYEK UNGGULAN (Layout 2 Kolom - Modul 5)
              ==================================================================== -->
-        <div id="modul3" style="padding-top: 20px; margin-bottom: 50px;">
+        <div id="proyek-web" style="margin-bottom: 45px;">
             <div class="section-title">
-                <h2>MODUL 3: Dasar CSS, Selector, dan Grouping</h2>
-                <p class="infotext">Penerapan Selector HTML, Class, ID, Grouping, serta tag SPAN dan DIV</p>
+                <h2>Proyek Unggulan</h2>
+                <p class="infotext">Karya utama dalam pengembangan website portofolio dan antarmuka responsif</p>
             </div>
 
-            <div class="layout-3-kolom clearfix">
-                <!-- Selector HTML & Class -->
-                <div id="sidebar-kiri">
-                    <h3>1. Selector HTML & Class</h3>
-                    <p>Mendefinisikan gaya pada elemen tag spesifik dan class yang dapat digunakan kembali.</p>
-                    <div style="background: #edf2f7; padding: 12px; border-radius: 6px; font-size: 13px;">
-                        <span class="headlines" style="font-size: 14pt;">Teks .headlines</span><br>
-                        <span class="sublines" style="font-size: 11pt;">Teks .sublines dengan warna teks abu-abu tua.</span><br>
-                        <span class="infotext">Teks .infotext bergaris miring untuk catatan.</span>
-                    </div>
-                </div>
-
-                <!-- Selector ID & Layer DIV -->
-                <div id="sidebar-tengah-atau-badan">
-                    <h3>2. Selector ID & Tag DIV</h3>
-                    <p>Penggunaan ID unik untuk elemen struktural seperti <code>#menu</code>, <code>#hero</code>, dan <code>#wrapper</code>.</p>
-                    <div style="background: #edf2f7; padding: 12px; border-radius: 6px; font-size: 13px;">
-                        <div style="background: #1e3c72; color: #fff; padding: 8px; border-radius: 4px; text-align: center;">
-                            <b>Contoh Layer DIV</b>
-                        </div>
-                        <p style="font-size: 12px; margin-top: 8px; margin-bottom: 0;">Tag <code>&lt;div&gt;</code> sebagai blok dan <code>&lt;span&gt;</code> sebagai inline tag.</p>
-                    </div>
-                </div>
-
-                <!-- Grouping Selector -->
-                <div id="sidebar-kanan">
-                    <h3>3. Grouping Selector</h3>
-                    <p>Menggabungkan deklarasi CSS beberapa selector sekaligus untuk efisiensi kode.</p>
-                    <div style="background: #edf2f7; padding: 12px; border-radius: 6px; font-size: 12px;">
-                        <code>h1, h2, h3 { font-family: 'Segoe UI'; }</code><br>
-                        <code>.headlines, .sublines { ... }</code>
-                        <p style="margin-top: 8px; margin-bottom: 0; color: #276749;"><b>✓ Kode bersih & mudah dikelola</b></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin-bottom: 50px;">
-
-        <!-- ====================================================================
-             MODUL 4: CSS IMAGE & BACKGROUND
-             ==================================================================== -->
-        <div id="modul4" style="padding-top: 20px; margin-bottom: 50px;">
-            <div class="section-title">
-                <h2>MODUL 4: CSS Image, Background & Efek Transparan</h2>
-                <p class="infotext">Pengaturan gambar (border, dimensi pasfoto, opacity hover) dan Text di Box Transparan</p>
-            </div>
-
-            <!-- Layout 2 Kolom untuk Demo Gambar -->
+            <!-- Layout 2 Kolom (Modul 5: Float Layout) -->
             <div class="layout-2-kolom clearfix">
-                <!-- Kolom Kiri: Ukuran Pasfoto -->
+                <!-- Kolom Kiri: Navigasi Filter & Info Developer -->
                 <div id="leftcolumn">
-                    <h3 style="text-align: center;">Pasfoto Standar</h3>
-                    <p class="infotext" style="text-align: center;">Uji dimensi 3x4, 4x6, dan 10x15</p>
-                    
-                    <div style="display: flex; justify-content: space-around; align-items: flex-end; margin-top: 20px;">
-                        <div style="text-align: center;">
-                            <img src="assets/images/profile.jpg" alt="3x4" class="img-portfolio pasfoto-3x4">
-                            <span style="font-size: 11px; font-weight: bold;">3x4</span>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="assets/images/profile.jpg" alt="4x6" class="img-portfolio pasfoto-4x6">
-                            <span style="font-size: 11px; font-weight: bold;">4x6</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Kolom Kanan: Box Transparan & Background Effect -->
-                <div id="rightcolumn">
-                    <h3>Efek Box Transparan & Hover Opacity</h3>
-                    <p>Penerapan background semi-transparan dengan efek blur kaca (glassmorphism):</p>
-                    
-                    <!-- Box Transparan Terang -->
-                    <div class="box-transparan">
-                        <h4 style="color: #1e3c72;">Box Transparan Terang (RGBA)</h4>
-                        <p style="font-size: 13px; margin-bottom: 0;">Menggunakan <code>background: rgba(255, 255, 255, 0.85)</code> dengan border lembut dan efek bayangan (box-shadow).</p>
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <!-- Foto Profil Avatar (Modul 4: CSS Image Border, Hover Opacity & Radius) -->
+                        <img src="assets/images/profile.jpg" alt="Foto Vania Veronica" class="foto-profil-avatar">
+                        <h3>Vania Veronica</h3>
+                        <p class="infotext">Teknik Komputer '25</p>
                     </div>
 
-                    <!-- Box Transparan Gelap -->
-                    <div class="box-transparan-dark" style="margin-top: 15px;">
-                        <h4>Box Transparan Gelap (Navy Glass)</h4>
-                        <p style="font-size: 13px; margin-bottom: 0;">Menggunakan <code>background: rgba(26, 54, 93, 0.85)</code> yang memberikan kontras tajam untuk teks informasi utama.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <hr style="margin: 15px 0; border: 0; border-top: 1px solid #e2e8f0;">
 
-        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin-bottom: 50px;">
-
-        <!-- ====================================================================
-             MODUL 5: CSS NAVIGASI & LAYOUT
-             ==================================================================== -->
-        <div id="modul5" style="padding-top: 20px; margin-bottom: 50px;">
-            <div class="section-title">
-                <h2>MODUL 5: CSS Navigasi & Multi-Column Layout</h2>
-                <p class="infotext">Penerapan Navigasi Vertikal, Horizontal, serta Float Layout 2 & 3 Kolom</p>
-            </div>
-
-            <!-- Demo 2 Kolom Layout -->
-            <div class="layout-2-kolom clearfix" style="background: #eef2f7; padding: 20px; border-radius: 8px;">
-                <div id="leftcolumn" style="width: 35%;">
-                    <h4>Navigasi Vertikal Sidebar</h4>
+                    <!-- Navigasi Vertikal Kategori (Modul 5) -->
+                    <h4>Kategori Proyek</h4>
                     <ul class="nav-vertikal">
-                        <li><a href="#modul3">Modul 3: Selector</a></li>
-                        <li><a href="#modul4">Modul 4: CSS Image</a></li>
-                        <li><a href="#modul5">Modul 5: Navigasi Layout</a></li>
-                        <li><a href="#modul6">Modul 6: Dropdown</a></li>
+                        <li><a href="#proyek-web">Frontend Website</a></li>
+                        <li><a href="#desain-ui">Desain & Layout Web</a></li>
+                        <li><a href="#sistem-informasi">Sistem & Basis Data</a></li>
+                        <li><a href="#galeri-foto">Dokumentasi Visual</a></li>
                     </ul>
-                </div>
-                <div id="rightcolumn" style="width: 60%;">
-                    <h4>Implementasi Layout 2 Kolom</h4>
-                    <p>Layout dua kolom dibuat menggunakan properti <code>float: left</code> dan <code>float: right</code> (atau pembagian persen lebar) serta clearfix untuk menjaga alur konten di bawahnya tetap rapi.</p>
+
+                    <hr style="margin: 15px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+                    <h4>Tech Stack</h4>
                     <div class="badge-container">
-                        <span class="badge">Float: Left</span>
-                        <span class="badge">Float: Right</span>
-                        <span class="badge badge-green">Clearfix</span>
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge badge-green">Git</span>
+                        <span class="badge badge-purple">UI/UX</span>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Detail Showcase Proyek Utama -->
+                <div id="rightcolumn">
+                    <!-- Selector Class: Headlines, Sublines, Infotext (Modul 3) -->
+                    <span class="headlines">Personal Web & Portfolio Portal</span><br>
+                    <div class="sublines">
+                        Website portofolio interaktif yang dirancang khusus untuk mempublikasikan identitas akademik, keahlian teknik komputer, serta rekam jejak proyek secara profesional dan terstruktur.
+                    </div>
+
+                    <!-- Box Transparan Terang (Modul 4: Glassmorphism) -->
+                    <div class="box-transparan">
+                        <h4 style="color: #1e3c72; margin-bottom: 8px;">✨ Fitur Utama & Keunggulan Desain:</h4>
+                        <ul style="padding-left: 20px; color: #4a5568; font-size: 14px; line-height: 1.8;">
+                            <li><b>Navigasi Bertingkat (Dropdown):</b> Akses menu cepat dengan transisi halus dan responsif.</li>
+                            <li><b>Multi-Column Layout:</b> Penerapan arsitektur 2 kolom dan 3 kolom yang rapi untuk penataan konten.</li>
+                            <li><b>Standardisasi Visual:</b> Penyesuaian dimensi gambar, sudut membulat <i>border-radius</i>, dan efek interaktif <i>hover</i>.</li>
+                            <li><b>Version Control GitHub:</b> Terintegrasi penuh dengan repositori GitHub Pages untuk deployment publik.</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 25px;">
+                        <a href="https://github.com/vaniaveronica0301-bot/vaniaveronica0301-bot" target="_blank" class="btn-primary">Lihat Source Code</a>
+                        <a href="contact.html" class="btn-secondary">Hubungi Pengembang</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin-bottom: 50px;">
+        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin-bottom: 45px;">
 
         <!-- ====================================================================
-             MODUL 6: CSS NAVIGASI & LAYOUT 2 (DROPDOWN, GRADIENT, TRANSITION)
+             BAGIAN 2: GALERI KARYA & PROYEK (Layout 3 Kolom - Modul 5)
              ==================================================================== -->
-        <div id="modul6" style="padding-top: 20px; margin-bottom: 40px;">
+        <div id="desain-ui" style="margin-bottom: 45px;">
             <div class="section-title">
-                <h2>MODUL 6: Dropdown Navigation, Gradient & Border Radius</h2>
-                <p class="infotext">Penerapan CSS Linear Gradient, sudut melingkar (border-radius), dan transisi dropdown menu</p>
+                <h2>Galeri Proyek & Desain Antarmuka</h2>
+                <p class="infotext">Eksplorasi aplikasi web dan implementasi sistem berbasis layout multi-kolom</p>
             </div>
 
-            <div class="box-transparan">
-                <h3 style="color: #1e3c72;">Fitur Lanjutan Modul 6 yang Diterapkan:</h3>
-                <div class="layout-3-kolom clearfix" style="margin-top: 20px; margin-bottom: 0;">
-                    <div id="sidebar-kiri" style="min-height: 180px;">
-                        <h4>🌈 Linear Gradient</h4>
-                        <p style="font-size: 13px;">Gradient dua warna pada navbar dan hero banner: <code>linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)</code>.</p>
+            <!-- Layout 3 Kolom (Modul 5: Float 3 Kolom) -->
+            <div class="layout-3-kolom clearfix">
+                
+                <!-- Kolom 1 (Kiri) -->
+                <div id="sidebar-kiri">
+                    <h3>🛍️ Toko Online & Form Checkout</h3>
+                    <p class="infotext" style="margin-bottom: 10px;">Aplikasi E-Commerce Sederhana</p>
+                    <p>Perancangan antarmuka toko online responsif yang dilengkapi katalog barang dan formulir transaksi pemesanan barang dengan validasi input yang rapi.</p>
+                    <div class="badge-container">
+                        <span class="badge">Form Handling</span>
+                        <span class="badge badge-green">CSS Grid</span>
                     </div>
-                    <div id="sidebar-tengah-atau-badan" style="min-height: 180px;">
-                        <h4>🔘 Border Radius</h4>
-                        <p style="font-size: 13px;">Memberikan efek rounded corner halus pada tombol, card, foto profil, dan sub-menu dropdown: <code>border-radius: 8px</code>.</p>
+                </div>
+
+                <!-- Kolom 2 (Tengah) -->
+                <div id="sidebar-tengah-atau-badan">
+                    <h3>🍽️ Katalog Restoran & Kuliner</h3>
+                    <p class="infotext" style="margin-bottom: 10px;">Desain Menu & Daftar Produk</p>
+                    <p>Penyusunan tata letak 2 kategori menu (daftar makanan dan minuman) dengan tipografi unik, palet warna tematik, dan kartu harga yang menarik.</p>
+                    <div class="badge-container">
+                        <span class="badge">Multi-Layout</span>
+                        <span class="badge badge-purple">Typography</span>
                     </div>
-                    <div id="sidebar-kanan" style="min-height: 180px;">
-                        <h4>⚡ CSS Transitions</h4>
-                        <p style="font-size: 13px;">Transisi halus saat hover pada tombol, menu navigasi, dan efek pasfoto: <code>transition: all .25s ease-in-out</code>.</p>
+                </div>
+
+                <!-- Kolom 3 (Kanan) -->
+                <div id="sidebar-kanan">
+                    <h3>📋 Sistem Kartu Identitas Digital</h3>
+                    <p class="infotext" style="margin-bottom: 10px;">Format Kartu KTP & KK Digital</p>
+                    <p>Implementasi sistem pencatatan data identitas diri dan kartu keluarga digital dengan styling tabel terstruktur, border tematik, dan tata letak data presisi.</p>
+                    <div class="badge-container">
+                        <span class="badge badge-green">Table Layout</span>
+                        <span class="badge">Data Styling</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin-bottom: 45px;">
+
+        <!-- ====================================================================
+             BAGIAN 3: STANDARISASI PASFOTO & DOKUMENTASI VISUAL (Modul 4: CSS Image)
+             ==================================================================== -->
+        <div id="galeri-foto" style="margin-bottom: 40px;">
+            <div class="section-title">
+                <h2>Standarisasi Pasfoto & Dokumentasi Visual</h2>
+                <p class="infotext">Penerapan standar dimensi foto resmi (3x4, 4x6, 10x15) dengan border solid dan efek hover</p>
+            </div>
+
+            <!-- Layout 2 Kolom untuk Dokumentasi Foto & Deskripsi -->
+            <div class="layout-2-kolom clearfix">
+                <!-- Kolom Kiri: Display Ukuran Pasfoto Standar (Modul 4) -->
+                <div id="leftcolumn">
+                    <h4 style="text-align: center; margin-bottom: 15px;">Ukuran Pasfoto Resmi</h4>
+                    
+                    <div style="display: flex; justify-content: space-around; align-items: flex-end; margin-top: 15px;">
+                        <!-- Ukuran 3x4 (120x160px) -->
+                        <div style="text-align: center;">
+                            <img src="assets/images/profile.jpg" alt="Pasfoto 3x4" class="img-portfolio pasfoto-3x4">
+                            <span style="font-size: 11px; font-weight: bold; display: block; margin-top: 6px; color: #1e3c72;">Ukuran 3x4</span>
+                        </div>
+                        <!-- Ukuran 4x6 (160x240px) -->
+                        <div style="text-align: center;">
+                            <img src="assets/images/profile.jpg" alt="Pasfoto 4x6" class="img-portfolio pasfoto-4x6">
+                            <span style="font-size: 11px; font-weight: bold; display: block; margin-top: 6px; color: #1e3c72;">Ukuran 4x6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Box Transparan Gelap & Filosofi Desain -->
+                <div id="rightcolumn">
+                    <!-- Box Transparan Gelap (Modul 4: Box Transparan Dark) -->
+                    <div class="box-transparan-dark">
+                        <h3 style="margin-bottom: 10px;">🌟 Prinsip Perancangan Antarmuka</h3>
+                        <p style="font-size: 14px; line-height: 1.7; margin-bottom: 15px;">
+                            Setiap halaman dan komponen visual dirancang dengan mengutamakan keseimbangan estetika, keterbacaan tipografi, dan kepatuhan standar semantik web.
+                        </p>
+                        <ul style="padding-left: 20px; font-size: 13px; line-height: 1.8;">
+                            <li><b>Harmoni Warna:</b> Gradasi biru navy yang melambangkan profesionalitas teknologi.</li>
+                            <li><b>Responsivitas:</b> Tata letak yang beradaptasi fleksibel untuk berbagai resolusi layar.</li>
+                            <li><b>Efisiensi CSS:</b> Pengorganisasian aturan styling eksternal yang terawat dan modular.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -206,10 +215,10 @@
 
     </div>
 
-    <!-- Footer -->
+    <!-- Footer (Modul 3 & Modul 5) -->
     <div id="footer">
         <p>&copy; 2026 <b>Vania Veronica (Nia)</b> - Kelas Tekom C 2025. All Rights Reserved.</p>
-        <p class="infotext">Dibuat untuk Praktikum Pemrograman Web Teknik Komputer | Repositori GitHub: <a href="https://github.com/vaniaveronica0301-bot/vaniaveronica0301-bot" target="_blank">vaniaveronica0301-bot</a></p>
+        <p class="infotext">Portofolio Pemrograman Web Teknik Komputer | Repositori GitHub: <a href="https://github.com/vaniaveronica0301-bot/vaniaveronica0301-bot" target="_blank">vaniaveronica0301-bot</a></p>
     </div>
 
 </body>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Saya - Vania Veronica (Nia)</title>
-    <!-- Menghubungkan file CSS Eksternal (Modul 3 & 4) -->
+    <title>Tentang Saya - Vania Veronica (Nia) | Teknik Komputer</title>
+    <!-- Menghubungkan file CSS Eksternal (Modul 3 & Modul 4) -->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
@@ -20,12 +20,12 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">Tentang Saya</a></li>
                 <li>
-                    <a href="portfolio.html">Praktikum CSS ▾</a>
+                    <a href="portfolio.html">Portofolio ▾</a>
                     <ul>
-                        <li><a href="portfolio.html#modul3">Modul 3 (Selector)</a></li>
-                        <li><a href="portfolio.html#modul4">Modul 4 (CSS Image)</a></li>
-                        <li><a href="portfolio.html#modul5">Modul 5 (Layout)</a></li>
-                        <li><a href="portfolio.html#modul6">Modul 6 (Dropdown)</a></li>
+                        <li><a href="portfolio.html#proyek-web">Proyek Web</a></li>
+                        <li><a href="portfolio.html#desain-ui">Desain & Layout</a></li>
+                        <li><a href="portfolio.html#galeri-foto">Galeri Pasfoto</a></li>
+                        <li><a href="portfolio.html#sistem-informasi">Sistem Informasi</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Kontak</a></li>
@@ -33,43 +33,45 @@
         </div>
     </div>
 
-    <!-- Hero Section / Sub-Header -->
-    <div id="hero" style="padding: 40px 20px;">
+    <!-- Hero Section / Sub-Header (Modul 4 & Modul 6) -->
+    <div id="hero" style="padding: 45px 20px;">
         <div class="hero-content">
+            <span class="hero-badge">Profil & Identitas Mahasiswa</span>
             <h1>Tentang Saya & Biodata Diri</h1>
-            <p>Mengenal lebih dekat latar belakang, profil akademik, dan cita-cita ke depan</p>
+            <p>Mengenal lebih dekat latar belakang akademik, profil pribadi, dan rencana masa depan</p>
         </div>
     </div>
 
     <!-- Wrapper Utama (Modul 3 & Modul 5) -->
     <div id="wrapper">
 
-        <!-- Layout 2 Kolom (Modul 5) -->
+        <!-- Layout 2 Kolom (Modul 5: Float Layout) -->
         <div class="layout-2-kolom clearfix">
             
-            <!-- Kolom Kiri: Galeri Pasfoto Standar (Modul 4: Tugas Mandiri) -->
+            <!-- Kolom Kiri: Galeri Pasfoto Standar (Modul 4: CSS Image) -->
             <div id="leftcolumn">
                 <h3 style="text-align: center; margin-bottom: 15px;">Galeri Pasfoto Resmi</h3>
-                <p class="infotext" style="text-align: center; margin-bottom: 20px;">Penerapan ukuran pasfoto standar (Modul 4 CSS Image)</p>
+                <p class="infotext" style="text-align: center; margin-bottom: 20px;">Standar ukuran pasfoto akademik</p>
 
-                <!-- Ukuran Pasfoto 4x6 (Modul 4) -->
+                <!-- Ukuran Pasfoto 4x6 (Modul 4: 160x240px) -->
                 <div style="text-align: center; margin-bottom: 20px;">
                     <img src="assets/images/profile.jpg" alt="Pasfoto 4x6 Vania Veronica" class="img-portfolio pasfoto-4x6">
                     <p style="font-size: 12px; margin-top: 6px; font-weight: bold; color: #1e3c72;">Ukuran 4x6 (160 x 240 px)</p>
                 </div>
 
-                <!-- Ukuran Pasfoto 3x4 (Modul 4) -->
+                <!-- Ukuran Pasfoto 3x4 (Modul 4: 120x160px) -->
                 <div style="text-align: center; margin-bottom: 20px;">
                     <img src="assets/images/profile.jpg" alt="Pasfoto 3x4 Vania Veronica" class="img-portfolio pasfoto-3x4">
                     <p style="font-size: 12px; margin-top: 6px; font-weight: bold; color: #1e3c72;">Ukuran 3x4 (120 x 160 px)</p>
                 </div>
 
+                <!-- Box Transparan Informasi Foto (Modul 4) -->
                 <div class="box-transparan" style="font-size: 13px;">
-                    <b>Catatan Efek CSS Image:</b>
-                    <ul style="padding-left: 15px; margin-top: 5px;">
-                        <li>Border solid 3px warna tema</li>
-                        <li>Efek transisi <i>hover opacity</i> 100%</li>
-                        <li>Sudut membulat <i>border-radius</i></li>
+                    <b>Dokumentasi Foto Mahasiswa:</b>
+                    <ul style="padding-left: 15px; margin-top: 5px; line-height: 1.6;">
+                        <li>Border solid warna tema identitas</li>
+                        <li>Efek transisi hover opacity interaktif</li>
+                        <li>Sudut membulat <i>border-radius</i> halus</li>
                     </ul>
                 </div>
             </div>
@@ -78,10 +80,10 @@
             <div id="rightcolumn">
                 <span class="headlines">Profil Mahasiswa</span><br>
                 <div class="sublines" style="margin-bottom: 20px;">
-                    Perkenalkan, saya <b>Vania Veronica</b>, akrab disapa <b>Nia</b>. Saat ini saya sedang menempuh pendidikan di bidang Teknik Komputer dengan minat khusus pada rekayasa perangkat lunak web, antarmuka pengguna (UI/UX), dan teknologi jaringan komputer.
+                    Perkenalkan, saya <b>Vania Veronica</b>, akrab disapa <b>Nia</b>. Saat ini saya sedang menempuh pendidikan di program studi Teknik Komputer dengan minat khusus pada pengembangan web frontend, desain antarmuka (UI/UX), dan jaringan komputer.
                 </div>
 
-                <!-- Kartu Biodata Format KTP / KK (Modul 3 & 4 Tugas Mandiri) -->
+                <!-- Kartu Biodata Format Identitas / KTP (Modul 3 & Modul 4) -->
                 <div class="card-identitas" style="margin-bottom: 30px;">
                     <div class="card-header-id">
                         <h3>KARTU BIODATA MAHASISWA TEKNIK KOMPUTER</h3>
@@ -118,14 +120,14 @@
                             <td class="value">082260950451</td>
                         </tr>
                         <tr>
-                            <td class="label">Minat / Keahlian</td>
+                            <td class="label">Minat & Keahlian</td>
                             <td class="colon">:</td>
                             <td class="value">Web Development (HTML/CSS), UI Design, Computer Networking</td>
                         </tr>
                     </table>
                 </div>
 
-                <!-- Rencana dan Target 2-3 Tahun ke Depan (Modul 3: Tugas Mandiri No. 3) -->
+                <!-- Target dan Rencana 2-3 Tahun ke Depan (Modul 3: Tugas Mandiri) -->
                 <div class="section-title" style="text-align: left; margin-bottom: 15px;">
                     <h2>🎯 Target & Rencana 2 - 3 Tahun ke Depan</h2>
                 </div>
@@ -150,7 +152,7 @@
 
     </div>
 
-    <!-- Footer -->
+    <!-- Footer (Modul 3 & Modul 5) -->
     <div id="footer">
         <p>&copy; 2026 <b>Vania Veronica (Nia)</b> - Kelas Tekom C 2025. All Rights Reserved.</p>
         <p class="infotext">Dibuat untuk Praktikum Pemrograman Web Teknik Komputer | Repositori GitHub: <a href="https://github.com/vaniaveronica0301-bot/vaniaveronica0301-bot" target="_blank">vaniaveronica0301-bot</a></p>
